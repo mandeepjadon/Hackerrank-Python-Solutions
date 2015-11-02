@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import cmath
+m=raw_input().strip("j")
+if m.count("-")==0:
+    new=map(int,m.split("+"))
+elif m.count("-")==1:
+    if m[0]=="-":
+        new=map(int,m.split("+"))
+    else:
+        new=map(int,m.split("-"))
+        new[1]=-1*new[1]
+elif m.count("-")==2:
+    new= map(int,m.strip("-").split("-"))
+    new[0]=-1*new[0]
+    new[1]=-1*new[1]
+print abs(complex(new[0], new[1]))
+print cmath.phase(complex(new[0], new[1]))
