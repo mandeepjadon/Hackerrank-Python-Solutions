@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
+m=map(int,raw_input().strip("\r").split(" "))
+n=map(int,raw_input().strip("\r").split(" "))
+new=list(product (m,n))
+for i in new:
+    print i ,
