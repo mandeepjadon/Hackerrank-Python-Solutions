@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+li=[]
+for i in range(0,n):
+    li.append(raw_input())
+se=set(li)
+print len(se)
+    
