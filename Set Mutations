@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to 
+n=int(raw_input())
+li=set(map(int,raw_input().split(" ")))
+temp=[]
+test_case=int(raw_input())
+for i in range(test_case):
+    command,m=raw_input().split(" ")
+    lis=map(int,raw_input().split(" "))
+    if command =="intersection_update":
+        li.intersection_update(lis)
+    elif command=="update":
+        li.update(lis)
+    elif command =="symmetric_difference_update":
+        li.symmetric_difference_update(lis)
+    elif command =="difference_update":
+        li.difference_update(lis)
+print sum(li)
