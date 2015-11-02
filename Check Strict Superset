@@ -1,0 +1,5 @@
+superset=set(map(int,raw_input().split(" ")))
+n=int(raw_input())
+set1=set(map(int,raw_input().split(" ")))
+set2=set(map(int,raw_input().split(" ")))
+print (superset.issuperset(set1) and superset.issuperset(set2))
