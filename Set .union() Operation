@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+english=int(raw_input())
+RE=set(map(int,raw_input().split(" ")))
+french=int(raw_input())
+RF=set(map(int,raw_input().split(" ")))
+print len(RE.union(RF))
