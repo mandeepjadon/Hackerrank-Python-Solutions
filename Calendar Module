@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import datetime
+data=raw_input().split(" ")
+DayL = ['Mon','Tues','Wednes','Thurs','Fri','Satur','Sun']
+date = DayL[datetime.date(int(data[2]),int(data[0]),int(data[1])).weekday()] + 'day'
+print date.upper()
