@@ -1,0 +1,12 @@
+n,m = map(int,raw_input().split())
+array = list(map(int,raw_input().split()))
+set1 = set(map(int,raw_input().split()))
+set2 = set(map(int,raw_input().split()))
+happiness = 0
+for i in array:
+    if i in set1:
+        happiness += 1
+    elif i in set2:
+        happiness -= 1
+
+print str(happiness)
