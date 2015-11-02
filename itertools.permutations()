@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import itertools
+user=raw_input().split(" ")
+new=[]
+answer=list(itertools.permutations(user[0],int(user[1])))
+for i in range(len(answer)):
+    new.append ("".join(answer[i]))
+new.sort()
+for i in new:
+    print i
