@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+li=[]
+for i in range(n):
+    li.append(raw_input().split())
+new=sorted(li,key=lambda x :x[2])
+for i in range(n):
+    if new[i][3]=='M':
+        print "Mr. "+new[i][0]+" "+new[i][1]
+    else:
+        print "Ms. "+new[i][0]+" "+new[i][1]
