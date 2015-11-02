@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+S=raw_input()
+l=raw_input().split(" ")
+l[0]=int(l[0])
+split=list(S)
+split[l[0]]=l[1]
+print "".join(split)
