@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUTn
+n=int(raw_input())
+m=list(set(map(int,raw_input().split(" "))))
+m.remove(max(m))
+print max(m)
+
