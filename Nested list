@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+lis=[]
+for i in range(0,n):
+    lis.append([raw_input(),float(raw_input())])
+second=sorted(set([y for x,y in lis ]))[1]
+final=set(x for x,y in lis if y==second)
+for x in final:
+    print x
+    
