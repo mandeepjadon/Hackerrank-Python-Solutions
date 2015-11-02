@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+n=int(raw_input())
+big=raw_input().split(" ")
+for i,j in Counter(big).items():
+    if j==1:
+        print i
