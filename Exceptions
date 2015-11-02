@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+mylist=[]
+for i in range(n):
+    mylist.append(raw_input().strip("\r").split(" "))
+for i in range(len(mylist)):
+    try:
+        print int(mylist[i][0])/int(mylist[i][1])
+    except ZeroDivisionError as e:
+        print "Error Code:",e
+    except ValueError as e:
+        print "Error Code:",e
+    
