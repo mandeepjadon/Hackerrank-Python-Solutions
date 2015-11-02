@@ -1,0 +1,32 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s=raw_input()
+for i in range(len(s)):
+    if s[i].isalnum()==True:
+        print True
+        break
+else:
+    print False
+for i in range(len(s)):
+    if s[i].isalpha()==True:
+        print True
+        break
+else:
+    print False
+for i in range(len(s)):
+    if s[i].isdigit()==True:
+        print True
+        break
+else:
+    print False
+for i in range(len(s)):
+    if s[i].islower()==True:
+        print True
+        break
+else:
+    print False
+for i in range(len(s)):
+    if s[i].isupper()==True:
+        print True
+        break
+else:
+    print False
