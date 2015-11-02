@@ -1,0 +1,17 @@
+n = int(raw_input())
+s = set(map(int,raw_input().split()))
+lis=[]
+operations=int(raw_input())
+for i in range(operations):
+    lis.append(raw_input().split(" "))
+for i in range(operations):
+    if lis[i][0]=="pop":
+        if len(s)==0:
+            pass
+        else:
+            s.pop()
+    elif lis[i][0]=="remove":
+        s.remove(int(lis[i][1]))
+    elif lis[i][0]=="discard":
+        s.discard(int(lis[i][1]))
+print sum(map(int,s))
